@@ -1,9 +1,11 @@
 # local-llm.nvim
 
+[MIT License](./LICENSE)
+
 A Neovim plugin for integrating Large Language Models into your editing workflow.
 
-local-llm.nvim is designed as a structured interface between your editor and an LLM provider.  
-It focuses on explicit commands, inspectable output, and controlled execution.
+local-llm.nvim provides a structured interface between your editor and an LLM provider.
+It emphasizes explicit commands, inspectable output, and controlled execution.
 
 ---
 
@@ -20,7 +22,7 @@ It focuses on explicit commands, inspectable output, and controlled execution.
 
 - Not an autonomous coding agent
 - Not background “magic” modifying your files
-- Not a hidden context injection system
+- Not a hidden context injection
 - Not a replacement for understanding your own code
 
 Everything is explicit. Nothing mutates your files without you invoking it.
@@ -46,7 +48,7 @@ Everything is explicit. Nothing mutates your files without you invoking it.
 
 Neovim 0.9+
 
-An LLM provider (Ollama support planned)
+An LLM provider (Ollama support initially)
 
 ---
 
@@ -61,8 +63,12 @@ Core architecture is being reconstructed in clean, reviewable phases.
 
 local-llm.nvim can optionally read project-specific intent files:
 
+```
+```
 .local-llm/charter.md
 .local-llm/milestone.md
+```
+```
 
 
 These are **ignored by default via `.gitignore`** to prevent accidental commits of private prompt content.
