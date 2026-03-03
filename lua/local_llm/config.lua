@@ -3,6 +3,9 @@
 local M = {}
 
 M.options = {
+	debug = {
+		enabled = false,
+	},
 	project = {
 		inject_charter = true,
 		inject_milestone = true,
